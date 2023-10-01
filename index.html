@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+    <section>
+        <div class="master">
+                <div class="header">
+                    <h1>Lista de Tareas</h1>
+                </div>
+                    <div class="todo-container">
+                        <label for="nuevaTarea" class="colorTexto">Nueva tarea</label><br>
+                        <input type="text" id="nuevaTarea">
+                        <button id="btnAgregar">Agregar</button>
+                        <table id="tablaTareas">
+                            <thead>
+                                <th>ID</th>
+                                <th>TAREA</th>
+                                <th>ESTADO</th>
+                                <th>ELIMINAR</th>
+                            </thead>
+                            <tbody>
+                        
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">
+                                        <p class="totales">Cantidad de tareas:</p>
+                                        <p>Asignadas: <span id="total" class="totales"></span></p>
+                                        <p>Realizadas: <span id="realizadas" class="totales"></span></p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+        </div>
+   
+    </section>
+   
+
+    <script src="./assets/java/script.js"></script>
+</body>
+</html>
